@@ -1,0 +1,246 @@
+body {
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    justify-content: space-between;
+    border: 1px solid rgb(0, 0, 0);
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255)fff;
+    border-style: 1px solid black;
+    display: block;
+
+  }
+  
+  ul.topnav li {
+    float: left;
+}
+  ul.topnav li img{
+    height: 17px;
+    width: 17px;
+    padding-left: 7px;
+  }
+  
+  
+  ul.topnav li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  ul.topnav li a:hover:not(.active) {background-color: #6ab97e;}
+
+  ul.topnav li a.active {background-color:  #6ab97e;}
+  
+  ul.topnav li.right img {
+    width: 70px;
+    height: 60px;
+}
+  .logo{
+    float: right;
+  }
+
+  ul.topnav li .search{
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: bisque;
+    text-align: left;
+    font-style: italic;
+    padding-left: 10px; 
+    margin-left: 110px;
+    display: block;
+  }
+
+  ul.topnav li .search img{
+    height: 17px;
+    width: 17px;
+    padding-left: 150px;
+  }
+
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+
+    main .title-open{
+        position: sticky;
+    }
+
+    main button{
+        position: sticky;
+    }
+
+    .h_name .buy{
+      position: sticky;
+    }
+
+    ul.topnav li .search{
+      width: fit-content;
+    }
+  }
+
+
+  main .open img{
+    display: block;
+    margin-top: 10px;
+    margin-bottom:20px ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 500px;
+  }
+ main .title-open h2{
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    font-size: 50px;
+    color: white;
+  }
+
+  main button{
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(118, 173, 118);
+    text-align: center;
+    border-color: #6ab97e;
+    position: relative;
+    bottom: 150px;
+    left: 100px;
+  }
+
+  main .promo{
+    text-align: center;
+    color: #6ab97e;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main .promo-slide{
+   text-align: center;
+  }
+
+  main .promo-slide img{
+    width: 50px;
+    height: 50px;
+    padding: 50px;
+  }
+
+  /* main .h_product .h_name img{
+    width: 130px;
+    height: 150px;
+    padding: 20px;
+   
+  }
+  main .h_product .h_name{
+    background-color:rgb(247, 207, 162);
+    width: 150px;
+    height: 300px;
+   margin-bottom: 20px;
+  }
+
+  main .h_product .desc{
+    font-size: small;
+    text-align: left;
+  } */
+.highlight{
+  text-align: center;
+  color: #6ab97e;
+}
+
+  .h_product > .h_name > img{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    text-align: center;
+  
+}
+
+.h_name{
+    height: 330px;
+    width: 200px;
+    text-align: center;
+    background-color: bisque; 
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px;
+}
+.h_name > .desc{
+    font-size: smaller;
+    text-align: left;
+    padding-left: 10px;
+    
+}
+
+.h_name > .desc > h2{
+    margin: 0;
+    font-size: 15px;
+    padding: 0;
+    
+}
+.h_name > .desc > p{
+    margin: 0;
+    font-size: 7px;
+    padding: 0;
+}
+.h_name > .desc > h3{
+    margin: 0;
+    font-size: 10px;
+    padding: 0;
+    
+}
+
+.h_product {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h_name button{
+  width: 40px;
+  height: 40px;
+}
+
+.h_name button img{
+  width: 20px;
+  height: 20px;
+}
+
+.h_name .buy{
+  position: relative;
+  top: 10px;
+  left: 80px;
+}
+
+.brand > img {
+  background-color: bisque;
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.brand>h2{
+  color: rgb(78, 172, 140);
+  text-align: center;
+}
+
+.brand{
+  text-align: center;
+  border-radius: 20px;
+}
+
+footer{
+  background-color: rgb(199, 114, 99);
+  height: 300px;
+  width: 100%;
+}
