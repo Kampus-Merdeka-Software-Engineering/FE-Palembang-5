@@ -4,8 +4,10 @@ body {
 }
 
 header{
+  /* notes for header untuk bisa di tetap/diam ketika kita menggulir layar 
+  and dibuat tidak ada margin*/
     justify-content: space-between;
-    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 2px 5px 0 #888888;
 }
 ul.topnav {
     list-style-type: none;
@@ -51,7 +53,7 @@ ul.topnav {
     width: 250px;
     height: 30px;
     border-radius: 20px;
-    background-color: bisque;
+    background-color: #CB997E;
     text-align: left;
     font-style: italic;
     padding-left: 10px; 
@@ -63,6 +65,19 @@ ul.topnav {
     height: 17px;
     width: 17px;
     padding-left: 150px;
+  }
+
+  /* untuk sementara biar keliatan letaknya */
+  ul li.profile{
+    background-color: aqua;
+    float: right;
+    margin:10px;
+
+  }
+  ul li.cart{
+    background-color: aqua;
+    float: right;
+    margin:10px;
   }
 
   @media screen and (max-width: 600px) {
