@@ -2,9 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
     list-style: none;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+
+body{
+  width: 100%;
 }
 
 header{
@@ -13,19 +18,76 @@ header{
     top: 0;
     z-index: 1000;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 33px 9%;
+    display: block;
     background: white;
     box-shadow: 0 2px 5px 0 #888888;
+  
+
 }
-.nav-list{
-    display: flex;
+
+@media screen and (max-width: 500px) {
+  header .nav-list a{
+    float: none;
+    display: block;
+  }
+  header .nav-list .cart img{
+    float: none;
+    display: block;
+   
+  }
+
+ 
 }
-.nav-list p, a{
+
+header .nav-list .menu .Search{
+  background-color:bisque;
+  height: 30px;
+  width: 300px;
+  border: 1px solid bisque;
+  border-radius: 20px;
+}
+header .nav-list .menu .Search img .s-logo{
+  height: 30px;
+  width: 30px;
+}
+
+
+header .nav-list .cart img{
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+ .nav-list{
+  list-style-type: none;
+    margin: 10px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255)fff;
+    border-style: 1px solid black;
+    display: block;
+}
+
+.nav-list a{
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+.nav-list .menu{
+  margin-top: 20px;
+}
+
+.nav-list .cart{
+  float: right;
+}
+
+.nav-list p{
     color: black;
-    margin-left: 60px;
+    /* margin-left: 60px; */
     font-size: 15px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
@@ -35,9 +97,10 @@ header{
     border-bottom: 2px solid black;
 }
 
-img{ 
-  width: 30px;
-  height: 30px;
+header img{ 
+  width: 80px;
+  height: 70px;
+  padding: 0;
 }
 
 @media screen and (max-width: 600px) {
