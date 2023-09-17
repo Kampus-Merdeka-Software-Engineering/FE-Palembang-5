@@ -17,7 +17,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 33px 9%;
-    background: transparent;
+    background: white;
     box-shadow: 0 2px 5px 0 #888888;
 }
 .nav-list{
@@ -35,8 +35,9 @@ header{
     border-bottom: 2px solid black;
 }
 
-.logo{
-    background-color: blue;
+img{ 
+  width: 30px;
+  height: 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -68,7 +69,7 @@ header{
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    height: 500px;
+    height: 600px;
   }
  main .title-open h2{
     position: absolute;
