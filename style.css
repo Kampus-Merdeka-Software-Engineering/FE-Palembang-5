@@ -1,86 +1,45 @@
-body {
-    margin: 10px;
-    font-family: 'Poppins', sans-serif;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 header{
-  /* notes for header untuk bisa di tetap/diam ketika kita menggulir layar 
-  and dibuat tidak ada margin*/
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
     box-shadow: 0 2px 5px 0 #888888;
 }
-ul.topnav {
-    list-style-type: none;
-    margin: 10px;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255)fff;
-    border-style: 1px solid black;
-    display: block;
-
-  }
-  
-  ul.topnav li {
-    float: left;
+.nav-list{
+    display: flex;
 }
-  ul.topnav li img{
-    height: 17px;
-    width: 17px;
-    padding-left: 7px;
-  }
-  
-  
-  ul.topnav li a {
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  ul.topnav li a:hover:not(.active) {background-color: #6ab97e;}
-
-  ul.topnav li a.active {background-color:  #6ab97e;}
-  
-  ul.topnav li.right img {
-    width: 70px;
-    height: 60px;
+.nav-list p, a{
+    color: black;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
 }
-  .logo{
-    float: right;
-  }
+.nav-list a:hover{
+    border-bottom: 2px solid black;
+}
 
-  ul.topnav li .search{
-    width: 250px;
-    height: 30px;
-    border-radius: 20px;
-    background-color: #CB997E;
-    text-align: left;
-    font-style: italic;
-    padding-left: 10px; 
-    margin-left: 110px;
-    display: block;
-  }
+.logo{
+    background-color: blue;
+}
 
-  ul.topnav li .search img{
-    height: 17px;
-    width: 17px;
-    padding-left: 150px;
-  }
-
-  /* untuk sementara biar keliatan letaknya */
-  ul li.profile{
-    background-color: aqua;
-    float: right;
-    margin:10px;
-
-  }
-  ul li.cart{
-    background-color: aqua;
-    float: right;
-    margin:10px;
-  }
-
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     ul.topnav li.right,
     ul.topnav li {float: none;}
 
