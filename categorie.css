@@ -44,7 +44,7 @@ ul.topnav {
     height: 60px;
 }
   .logo{
-    float: right;
+    float: left;
   }
 
   ul.topnav li .search{

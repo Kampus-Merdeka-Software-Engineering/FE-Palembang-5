@@ -124,75 +124,88 @@ header{
     font-size: small;
     text-align: left;
   } */
-.highlight{
-  text-align: center;
-  color: #6ab97e;
-}
-
-  .h_product > .h_name > img{
-    height: 150px;
-    width: 150px;
-    margin: 20px;
+  .highlight{
     text-align: center;
+    color: #6ab97e;
+  }
   
-}
-
-.h_name{
-    height: 330px;
-    width: 200px;
-    text-align: center;
-    background-color: bisque; 
-    padding: 10px;
-    border-radius: 15px;
-    margin: 20px;
-}
-.h_name > .desc{
-    font-size: smaller;
-    text-align: left;
-    padding-left: 10px;
-    
-}
-
-.h_name > .desc > h2{
-    margin: 0;
-    font-size: 15px;
-    padding: 0;
-    
-}
-.h_name > .desc > p{
-    margin: 0;
-    font-size: 7px;
-    padding: 0;
-}
-.h_name > .desc > h3{
-    margin: 0;
-    font-size: 10px;
-    padding: 0;
-    
-}
-
-.h_product {
-    text-align: center;
-    display: block;
+  main .h_product table{
     margin-left: auto;
     margin-right: auto;
-}
-
-.h_name button{
-  width: 40px;
-  height: 40px;
-}
-
-.h_name button img{
-  width: 20px;
-  height: 20px;
-}
-
-.h_name .buy{
-  position: relative;
-  top: 10px;
-  left: 80px;
-}
+  }
+  
+  main .h_product .h_name{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 200px;
+    height: 350px;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  main .h_product img{
+    width: 90%;
+    height: 150px;
+    margin: 10px 10px;
+    }
+  
+  
+  .h_name{
+      height: 330px;
+      width: 200px;
+      text-align: center;
+      background-color: bisque; 
+      padding: 10px;
+      border-radius: 15px;
+      margin: 20px;
+  }
+  .h_name > .desc{
+      font-size: smaller;
+      text-align: left;
+      padding-left: 10px;
+      
+  }
+  
+  .h_name > .desc > h2{
+      margin: 0;
+      font-size: 15px;
+      padding: 0;
+      
+  }
+  .h_name > .desc > p{
+      margin: 0;
+      font-size: 7px;
+      padding: 0;
+  }
+  .h_name > .desc > h3{
+      margin: 0;
+      font-size: 10px;
+      padding: 0;
+      
+  }
+  
+  
+  
+  .h_name button{
+    width: 40px;
+    height: 40px;
+  }
+  
+  main .h_name .keranjang {
+    width: 20px;
+    height: 20px;
+  margin-right: auto;
+  margin-left: auto;
+   
+  
+  }
+  
+  .h_name .buy{
+    position: relative;
+    top: 10px;
+    left: 80px;
+  }
 
 .brand > img {
   background-color: bisque;
