@@ -197,5 +197,18 @@ main .main-content button{
   height: 30px;
 }
 
+main .next{
+  height: 30px;
+  width: 40px;
+  border: #6ab97e;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  }
+  
+  main .next button{
+  height: 30px;
+  width: 40px;
+  }
 
 
