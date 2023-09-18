@@ -30,11 +30,6 @@ header{
     float: none;
     display: block;
   }
-  header .nav-list .cart img{
-    float: none;
-    display: block;
-   
-  }
 
  
 }
@@ -46,9 +41,10 @@ header .nav-list .menu .Search{
   border: 1px solid bisque;
   border-radius: 20px;
 }
-header .nav-list .menu .Search img .s-logo{
-  height: 30px;
-  width: 30px;
+header .nav-list .menu img {
+  height: 20px;
+  width: 20px;
+  /* padding-right: 10px; */
 }
 
 
@@ -97,7 +93,7 @@ header .nav-list .cart img{
     border-bottom: 2px solid black;
 }
 
-header img{ 
+header .nav-list .logo img{ 
   width: 80px;
   height: 70px;
   padding: 0;
@@ -197,6 +193,10 @@ header img{
     margin-left: auto;
     margin-right: auto;
   }
+
+  main .h_product td{
+    margin-left: 100px;
+  }
   
   main .h_product .h_name{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -206,6 +206,7 @@ header img{
     border-radius: 5px;
     margin-right: auto;
     margin-left: auto;
+   s
   }
   
   main .h_product img{
@@ -268,7 +269,7 @@ header img{
   .h_name .buy{
     position: relative;
     top: 10px;
-    left: 80px;
+    left: 70px;
   }
 
 .brand > img {
