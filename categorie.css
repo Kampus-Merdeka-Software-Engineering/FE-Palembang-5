@@ -105,9 +105,12 @@ ul.topnav {
   }
 
   main .hot .tagline{
-    position: relative;
-    left: 500px;
-    bottom: 300px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 200px;
+  left: 500px;
+  font-size: 50px;
+  color: white;
   }
 
   main hr{
