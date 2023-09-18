@@ -159,31 +159,16 @@ header .nav-list .logo img{
 
   main .promo-slide{
    text-align: center;
+   margin: 50px 0px;
   }
 
   main .promo-slide img{
-    width: 50px;
-    height: 50px;
-    padding: 50px;
-  }
-
-  /* main .h_product .h_name img{
-    width: 130px;
+    width: 140px;
     height: 150px;
-    padding: 20px;
-   
-  }
-  main .h_product .h_name{
-    background-color:rgb(247, 207, 162);
-    width: 150px;
-    height: 300px;
-   margin-bottom: 20px;
+    margin: 10px;
   }
 
-  main .h_product .desc{
-    font-size: small;
-    text-align: left;
-  } */
+
   .highlight{
     text-align: center;
     color: #6ab97e;
