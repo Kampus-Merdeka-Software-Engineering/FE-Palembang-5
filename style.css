@@ -195,7 +195,7 @@ header .nav-list .logo img{
   }
 
   main .h_product td{
-    margin-left: 100px;
+    padding-right: 30px;
   }
   
   main .h_product .h_name{
@@ -206,7 +206,7 @@ header .nav-list .logo img{
     border-radius: 5px;
     margin-right: auto;
     margin-left: auto;
-   s
+  
   }
   
   main .h_product img{
