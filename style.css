@@ -30,6 +30,7 @@ header{
   display: none;
   float: left;
 }
+
 /* @media screen and (max-width: 600px) {
   header .nav-list a{
     float: none;
