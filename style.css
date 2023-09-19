@@ -22,27 +22,97 @@ header{
     display: block;
     background: white;
     box-shadow: 0 2px 5px 0 #888888;
-    height: 110px;
+    
   
 
 }
-
-@media screen and (max-width: 500px) {
+.icon {
+  display: none;
+  float: left;
+}
+/* @media screen and (max-width: 600px) {
   header .nav-list a{
     float: none;
     display: block;
+    text-align: left;
   }
+  header .nav-list .cart, header .nav-list .profile, header .nav-list .cart img, 
+  header .nav-list .profile img{
+    float: none;
+    display: block;
+    margin: 0px ;
+  }
+  
+   .nav-list a .icon{
+      float: right;
+      display: block;
+    }
 
  
+} */
+
+@media screen and (max-width: 600px) {
+  .nav-list a:not(:first-child) {display: none;}
+  .nav-list a.icon {
+    float: right;
+    display: block;
+  }
 }
 
-header .nav-list .menu .Search{
-  background-color:bisque;
+@media screen and (max-width: 600px) {
+  .nav-list.responsive {position: relative;}
+  .nav-list.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-list.responsive  a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ .profile .cart {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+header a  .search-container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-container button {
+  float: right;
+  padding: 3px 6px;
+  margin: 0px 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+ border-radius: 10px;
+}
+
+.search-container input{
+  height: 35px;
+  width: 270px;
+  border-radius: 25px;
+  background-color: #6B705C;
+}
+
+.nav-list .search-container button:hover {
+  background: #ccc;
+}
+
+/* header .nav-list .menu .Search{
+  background-color:#A5A58B;
   height: 30px;
   width: 300px;
-  border: 1px solid bisque;
+  border: 1px solid #A5A58B;
   border-radius: 20px;
-}
+} */
 header .nav-list .menu img {
   height: 20px;
   width: 20px;
@@ -50,11 +120,14 @@ header .nav-list .menu img {
 }
 
 
-header .nav-list .cart img{
+header .nav-list .cart img, header .nav-list .profile img{
   float: right;
   width: 20px;
   height: 20px;
+  margin-left: 10px;
 }
+
+
 
  .nav-list{
   list-style-type: none;
@@ -79,7 +152,7 @@ header .nav-list .cart img{
   margin-top: 20px;
 }
 
-.nav-list .cart{
+.nav-list .cart, .nav-list .profile{
   float: right;
 }
 
@@ -117,9 +190,7 @@ header .nav-list .logo img{
       position: sticky;
     }
 
-    ul.topnav li .search{
-      width: fit-content;
-    }
+ 
   }
 
 
@@ -140,16 +211,17 @@ header .nav-list .logo img{
     color: white;
   }
 
-  main button{
-    height: 50px;
-    width: 100px;
-    border-radius: 10px;
-    background-color: rgb(118, 173, 118);
+  main  .button-open{
+    height: 56px;
+    width: 217px;
+    border-radius: 30px;
+    background-color: #FFE8D6;
     text-align: center;
-    border-color: #6ab97e;
+    border-color:#FFE8D6;
     position: relative;
     bottom: 150px;
     left: 100px;
+    cursor: pointer;
   }
 
   main .promo{
@@ -239,9 +311,12 @@ header .nav-list .logo img{
   
   
   
-  .h_name button{
+  .h_name  .buy{
     width: 40px;
     height: 40px;
+    background-color: #FFE8D6;
+    border-radius: 30px;
+    border-color:#FFE8D6;
   }
   
   main .h_name .keranjang {

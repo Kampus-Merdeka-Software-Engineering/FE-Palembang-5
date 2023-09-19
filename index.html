@@ -7,33 +7,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BuyTech</title>
+
 </head>
 <body>
-    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "nav-list") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav-list";
+          }
+        }
+        </script>
     <header>
-    <div class="nav-list">
+    <div class="nav-list" id="myTopnav">
         <div class="logo">
             <a>
-                <img class="logo" src="logo folder/logo.png" alt="imglogo">
+                <img href="index.html" class="logo" src="logo folder/logo.png" alt="imglogo">
             </a>
         </div>
-            <div class="menu">
-                <a>
-                    <input type="text" placeholder="Search.." class="Search">
-                    <img class="s-logo" src="icon/search.png" alt="">
-                    
-                </a>
-                <a href="categorie.html">Categories</a>
-                <a href="#">Profile</a>
-            </div>
+         <div class="menu">
 
-            <div class="cart">
-            <a href="">
-                    <img src="icon/cart.png" class="active" alt="cart"></li>
-            </a>
-            </div>
-          
+            <a href="index.html">Home</a>
+            <a href="categorie.html">Categories</a>
+            <a>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="i-search"><img src="icon/search.png" alt=""></i></button>
+                    </form>
+                  </div> 
+            </a>  
+           
+                <a class="profile" href="">Profile
+                      <img src="icon/profile.png"  alt="">
+               </a>
+           
+           
+               <a class="cart" href="">Cart
+                   <img src="icon/cart.png"alt="cart"></li>
+               </a>
+           
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
     </div>
     </header>
     
@@ -44,7 +66,7 @@
         <div class="title-open">
             <h2>Beli aja di sini!</h2>
         </div>
-        <button>
+        <button class="button-open">
             <h4>Start</h4>
         </button>
 
