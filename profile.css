@@ -74,6 +74,11 @@ main .container-act p{
     font-weight: bold;
 }
 
+main .container-act img{
+    height: 15px;
+    width: 15px;
+}
+
 
 main .container-act .activity{
     background: linear-gradient(to bottom, #ffffff, blanchedalmond);
