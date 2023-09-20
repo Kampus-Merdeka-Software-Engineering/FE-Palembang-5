@@ -187,6 +187,7 @@ header{
 }
 
 .order-overflow{
+  height: 400px;
   overflow-y: scroll;
 }
 .container-cart{
@@ -236,6 +237,11 @@ td{
   width: 10px;
 }
 
+.stuff input{
+  width: 35px;
+}
+
+
 /* check out */
 
 .checkOut{
@@ -252,3 +258,72 @@ border-radius: 30px;
   text-align: center;
   padding: 30px 0px;
 }
+
+.container-total{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+form {
+  max-width: 600px; /* Lebar maksimum formulir */
+  margin: 0 auto; /* Tengahkan formulir secara horizontal */
+  padding: 20px;
+}
+/* label,
+        input[type="text"],
+        textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        } */
+
+        @media screen and (max-width: 600px) {
+          form {
+              max-width: 100%; /* Gunakan seluruh lebar layar */
+              padding: 10px; /* Kurangi padding pada layar kecil */
+          }
+      }
+.total{
+  height: fit-content;
+  width: 50%;
+  
+}
+
+input #address{
+  height: 50px;
+}
+
+.form-group{
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+}
+.form-group label, input, textarea {
+  width: 100px; 
+  /* text-align: left;  */
+  margin-right: 10px;
+}
+
+/* Mengatur tampilan input form */
+.form-group input {
+  flex: 1; }
+
+  textarea{
+    flex: 1; 
+  }
+
+  .pay button{
+    width: 80px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #6B705C;
+    
+  }
+
+  .pay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

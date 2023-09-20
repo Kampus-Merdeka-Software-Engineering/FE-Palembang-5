@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>BuyTech</title>
     <link  href="cart.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +80,9 @@
                                     <h4>Var </h4>
                                 </td>
                                 <td>
-                                    +-
+                                   <div class="stuff">
+                                    <input class="form-input" type="number" name="number" required>
+                                   </div>
                                 </td>
                                 <td>
                                     <button class="trash">
@@ -116,8 +118,10 @@
                                     <h4>Var </h4>
                                 </td>
                                 <td>
-                                    +-
-                                </td>
+                                    <div class="stuff">
+                                     <input class="form-input" type="number" name="number" required>
+                                    </div>
+                                 </td>
                                 <td>
                                     <button class="trash">
                                         <img src="icon/sampah.png" alt="">
@@ -151,8 +155,10 @@
                                     <h4>Var </h4>
                                 </td>
                                 <td>
-                                    +-
-                                </td>
+                                    <div class="stuff">
+                                     <input class="form-input" type="number" name="number" required>
+                                    </div>
+                                 </td>
                                 <td>
                                     <button class="trash">
                                         <img src="icon/sampah.png" alt="">
@@ -186,8 +192,10 @@
                                     <h4>Var </h4>
                                 </td>
                                 <td>
-                                    +-
-                                </td>
+                                    <div class="stuff">
+                                     <input class="form-input" type="number" name="number" required>
+                                    </div>
+                                 </td>
                                 <td>
                                     <button class="trash">
                                         <img src="icon/sampah.png" alt="">
@@ -214,7 +222,47 @@
             
                     <div class="checkOut">
                         <h2>Check Out</h2>
-                        <div class="total">0</div>
+                        <div class="container-total">
+                            <div class="total">
+                                <div class="form-group">
+                                    <label class="form-label" for="subtotal"> Subtotal </label>
+                                    <input class="form-input" type="number" id="subtotal" name="number" required>
+                                  </div> 
+                    
+                                  <div class="form-group">
+                                    <label class="form-label" for="shipping"> Shipping </label>
+                                    <input class="form-input" type="text" id="shipping" name="shipping" required>
+                                  </div>
+    
+                                  <div class="form-group">
+                                    <label class="form-label" for="address"> Address</label>
+                                    
+                                    <textarea id="address" name="pesan" ></textarea>
+                                  </div>
+    
+                                  <div class="form-group">
+                                    <label class="form-label" for="voucher"> Voucher</label>
+                                    <input class="form-input" type="text" id="voucher" name="voucher" required>
+                                  </div>
+    
+                                  <div class="form-group">
+                                    <label class="form-label" for="ongkir"> Ongkir</label>
+                                    <input class="form-input" type="number" id="ongkir" name="ongkir" required>
+                                  </div>
+    
+                                  <div class="form-group">
+                                    <label class="form-label" for="total"> Total</label>
+                                    <input class="form-input" type="number" id="total" name="total" required>
+                                  </div>
+                            </div>
+                           
+                        </div>
+                        <div class="pay">
+                            <button>
+                                Checkout
+                            </button>
+                        </div>
+                        
                     </div>
         </div>
     </main>
