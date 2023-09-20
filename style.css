@@ -26,9 +26,9 @@ header{
   
 
 }
-.icon {
+.nav-list .icon {
   display: none;
-  float: left;
+  
 }
 
 /* @media screen and (max-width: 600px) {
@@ -77,14 +77,9 @@ header{
     display: block;
     text-align: left;
   }
+ 
 }
 
-
-
-header a  .search-container{
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .search-container button {
   float: right;
@@ -131,7 +126,7 @@ header .nav-list .cart img, header .nav-list .profile img{
 
 
  .nav-list{
-  list-style-type: none;
+    list-style-type: none;
     margin: 10px;
     overflow: hidden;
     background-color: rgb(255, 255, 255)fff;
@@ -147,6 +142,7 @@ header .nav-list .cart img, header .nav-list .profile img{
   padding: 20px 16px;
   text-decoration: none;
   font-size: 17px;
+ 
   
 }
 .nav-list .menu{
@@ -190,8 +186,22 @@ header .nav-list .logo img{
     .h_name .buy{
       position: sticky;
     }
+/* 
+    main .h_product .h_name img{
+      height: 80px;
+      width: 50%;
+    }
+    .h_name{
+      padding: 0%;
+      height: fit-content;
+      width: 100%;
+    }
 
- 
+    main .h_name .keranjang {
+      width: 10%;
+      height: 10px;
+    } */
+
   }
 
 
@@ -248,10 +258,18 @@ header .nav-list .logo img{
     text-align: center;
     color: #6ab97e;
   }
+
+  .h_product{
+    width: 100%;
+    overflow-x: auto;
+
+  }
+
   
   main .h_product table{
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
   }
 
   main .h_product td{
@@ -275,7 +293,10 @@ header .nav-list .logo img{
     margin: 10px 10px;
     }
   
-  
+    .h_name img{
+      max-width: 100%;
+            height: auto;
+    }
   .h_name{
       height: 330px;
       width: 200px;
@@ -283,7 +304,7 @@ header .nav-list .logo img{
       background-color: bisque; 
       padding: 10px;
       border-radius: 15px;
-      margin: 20px;
+      margin: 10px;
   }
   .h_name > .desc{
       font-size: smaller;
