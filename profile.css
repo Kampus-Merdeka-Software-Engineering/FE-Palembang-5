@@ -110,3 +110,23 @@ main .container-act .service h4{
     text-align: center;
     padding-bottom: 10px;
 }
+
+.log-out button{
+    background-color:#6B705C ;
+    color: #ffffff;
+    width: 70px;
+    height: 50px;
+    border-radius: 20px;
+    
+    cursor: pointer;
+}
+
+.log-out{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log-out a{
+    color: #ffffff;
+}
