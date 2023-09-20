@@ -16,12 +16,163 @@ body{
 
 
 header{
-    border: 1px solid black;
-    height: 100px;
-}
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: block;
+    background: white;
+    box-shadow: 0 2px 5px 0 #888888;
+  }
+  .nav-list .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav-list a:not(:first-child) {display: none;}
+    .nav-list a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav-list.responsive {position: relative;}
+    .nav-list.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav-list.responsive  a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+   .profile .cart {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+   
+  }
+  
+  
+  .search-container button {
+    float: right;
+    padding: 3px 6px;
+    margin: 0px 16px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+   border-radius: 10px;
+  }
+  
+  .search-container input{
+    height: 35px;
+    width: 270px;
+    border-radius: 25px;
+    background-color: #6B705C;
+  }
+  
+  .nav-list .search-container button:hover {
+    background: #ccc;
+  }
+  
+  header .nav-list .menu img {
+    height: 20px;
+    width: 20px;
+    /* padding-right: 10px; */
+  }
+  
+  
+  header .nav-list .cart img, header .nav-list .profile img{
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  
+  
+  
+   .nav-list{
+      list-style-type: none;
+      margin: 10px;
+      overflow: hidden;
+      background-color: rgb(255, 255, 255)fff;
+      border-style: 1px solid black;
+      display: block;
+  }
+  
+  .nav-list a{
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+   
+    
+  }
+  .nav-list .menu{
+    margin-top: 20px;
+  }
+  
+  .nav-list .cart, .nav-list .profile{
+    float: right;
+  }
+  
+  .nav-list p{
+      color: black;
+      /* margin-left: 60px; */
+      font-size: 15px;
+      font-weight: 600;
+      border-bottom: 2px solid transparent;
+      transition: all .55s ease;
+  }
+  .nav-list a:hover{
+      border-bottom: 2px solid black;
+  }
+  
+  header .nav-list .logo img{ 
+    width: 80px;
+    height: 70px;
+    padding: 0;
+  }
+  
+    @media screen and (max-width: 600px) {
+      ul.nav-list li.right,
+      ul.nav-list li {float: none;}
+  
+      main .title-open{
+          position: sticky;
+      }
+      main .hot .tagline{
+          position: static;
+      }
+  
+      main button{
+          position: sticky;
+      }
+  
+      .h_name .buy{
+        position: sticky;
+      }
+  
+      ul.topnav li .search{
+        width: fit-content;
+      }
+  
+  
+  
+    }
+
+
 
 main .container-p{
     text-align: center;
+    margin-top: 150px;
 }
 
 main .photo-p{

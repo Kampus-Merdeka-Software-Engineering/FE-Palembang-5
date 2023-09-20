@@ -7,35 +7,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BuyTech</title>
 </head>
 <body>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "nav-list") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav-list";
+          }
+        }
+        </script>
     <header>
-        <nav>
-            <ul class="topnav">
-                <div class="logo">
-                    <li class="right">
-                        <img src="logo folder/logo.png" alt="">
-                    </li>
-                </div>
-                <li><a class="active" href="index.html">Dashboard</a></li>
-                <li><a href="categorie.html">Categories</a></li>
-                <li><a href="#contact">About Us</a></li>
-                <li><a href="#profile">Profile <img src="icon/profile.png" alt=""></a></li>
-                <li><a href="#cart">Cart <img src="icon/cart.png" alt=""></a></li>
-                <li>
-                    <p class="search">Search <img src="icon/search.png" alt=""></p>
-                </li>
-                
-              
-            
-                
-              </ul>
-        </nav>
+        <div class="nav-list" id="myTopnav">
+            <div class="logo">
+                <a>
+                    <img href="index.html" class="logo" src="logo folder/logo.png" alt="imglogo">
+                </a>
+            </div>
+             <div class="menu">
+                <a href="index.html" >Home</a>
+                <a href="categorie.html">Categories</a>
+                <a>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit"><i class="i-search"><img src="icon/search.png" alt=""></i></button>
+                        </form>
+                      </div> 
+                </a>  
+               
+                    <a class="profile" href="profile.html">Profile
+                          <img src="icon/profile.png"  alt="">
+                   </a>
+               
+               
+                   <a class="cart" href="">Cart
+                       <img src="icon/cart.png"alt="cart"></li>
+                   </a>
+               
+            </div>
+    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
     </header>
 
     <main>
-        <div class="hot">
+        <DIV class="container-hot">
+            <div class="hot">
           
                 <a href="#">
                     <img src="product/hot.png" alt="zonk">
@@ -43,9 +67,9 @@
                 <a href="#">
                     <h2 class="tagline">September Promo! </h2>
                 </a>
-           
-            
         </div>
+        </DIV>
+        
 
         <div>
             <hr>
