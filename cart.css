@@ -250,9 +250,9 @@ td{
   margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
-width: 50%;
-height: 600px;
-border-radius: 30px;
+    width: 50%;
+    height: 600px;
+    border-radius: 30px;
 }
 .checkOut h2{
   text-align: center;
@@ -265,26 +265,7 @@ border-radius: 30px;
   align-items: center;
   
 }
-form {
-  max-width: 600px; /* Lebar maksimum formulir */
-  margin: 0 auto; /* Tengahkan formulir secara horizontal */
-  padding: 20px;
-}
-/* label,
-        input[type="text"],
-        textarea {
-            display: block;
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 10px;
-        } */
-
-        @media screen and (max-width: 600px) {
-          form {
-              max-width: 100%; /* Gunakan seluruh lebar layar */
-              padding: 10px; /* Kurangi padding pada layar kecil */
-          }
-      }
+     
 .total{
   height: fit-content;
   width: 50%;
@@ -300,7 +281,7 @@ input #address{
   display: flex;
   align-items: center;
 }
-.form-group label, input, textarea {
+.form-group label {
   width: 100px; 
   /* text-align: left;  */
   margin-right: 10px;
