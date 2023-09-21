@@ -254,31 +254,21 @@ main .main-content{
 
 @media screen and (max-width: 600px) {
   main .main-content tables {
-    display: block; /* Mengubah tabel menjadi tampilan blok */
-    overflow-x: auto; /* Tambahkan scroll horizontal jika diperlukan */
+    display: block; 
+    overflow-x: auto; 
   }
 
   th, td {
-    width: auto; /* Set lebar kolom otomatis */
-    display: block; /* Mengubah sel menjadi tampilan blok */
-    text-align: left; /* Pusatkan teks secara kiri */
+    width: auto; 
+    display: block; 
+    text-align: left; 
   }
 
   th {
-    background-color: #f2f2f2; /* Warna latar belakang header */
+    background-color: #f2f2f2; 
   }
 
-  /* Sembunyikan header di tampilan kecil */
-  thead {
-    display: none;
-  }
 
-  /* Atur tampilan sel untuk responsif */
-  tbody tr {
-    margin-bottom: 10px; 
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
 }
 
 main .main-content .card{
