@@ -172,13 +172,17 @@ header .nav-list .logo img{
   }
 
   @media  (max-width : 600px) {
-    main .hot .tagline{
-      font-size: 25px;
+    main .hot a .tagline{
+      font-size: 30px;
+      left: 370px;
+      bottom: 230px;
     }
 
-    main .hot  img{
-      height: 150px;
-      width: 200px; 
+    main .hot  a img{
+      height: 250px;
+      width: 370px; 
+      padding-top: 50px;
+     
     }
     
   }
@@ -248,6 +252,34 @@ main .main-content{
   flex: 1;
 }
 
+@media screen and (max-width: 600px) {
+  main .main-content tables {
+    display: block; /* Mengubah tabel menjadi tampilan blok */
+    overflow-x: auto; /* Tambahkan scroll horizontal jika diperlukan */
+  }
+
+  th, td {
+    width: auto; /* Set lebar kolom otomatis */
+    display: block; /* Mengubah sel menjadi tampilan blok */
+    text-align: left; /* Pusatkan teks secara kiri */
+  }
+
+  th {
+    background-color: #f2f2f2; /* Warna latar belakang header */
+  }
+
+  /* Sembunyikan header di tampilan kecil */
+  thead {
+    display: none;
+  }
+
+  /* Atur tampilan sel untuk responsif */
+  tbody tr {
+    margin-bottom: 10px; 
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+}
 
 main .main-content .card{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
