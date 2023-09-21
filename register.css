@@ -67,7 +67,7 @@ body {
     margin: 12px;
      color: white;
   }
-   .form-button {
+   #form-button {
   background: #6B705C;
   color: white;
   border: none;
@@ -76,7 +76,7 @@ body {
   cursor: pointer;
   font-size: 10px;
   }
-  .form-button:hover {
+  #form-button:hover {
   background: red;
   color: white;
   }

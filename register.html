@@ -33,9 +33,11 @@
                         <div class="checkbox">
                             <label><input type="checkbox" name="remember"> Remember me</label>
                         </div>
-          
-                        <button class="form-button" type="login">Login </button>
+                            <!-- ini untuk class="form-button" anisa ganti jadi id utk pemanggilan di js -->
+                        <button id="form-button" type="login">Login </button>
                       </form>
+
+                      <!-- <p id="loginStatus"></p> -->
                 </div>
                 
             </div>
@@ -45,5 +47,33 @@
         </div>
        
     </main>
+
+    <!-- validasi password dg syarat:
+    - minimal 8 karakter
+    - minimal 1 huruf besar, 1 huruf kecil, 1 angka, 1 karakter khusus -->
+    <script>
+        document.getElementById("form-button").addEventListener("click", function(){
+            var username = document.getElementById("email").value;
+            var password= document.getElementById("password").value;
+
+            if (validatePassword(password)) {
+                // document.getElementById("loginStatus").textContent = "Login Berhasil"
+                alert("login berhasil");
+                window.location.href = "index.html";
+                return false;
+            } else {
+                // document.getElementById("loginStatus").textContent = "Login Gagal. Periksa kembali password Anda."
+                // alert yng ini belom bisa jalan gimana anjay
+                alert("Login gagal. Password Salah!");
+                return false;
+            }
+        });
+
+        function validatePassword(password) {
+            var passwordPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+            return passwordPattern;
+        }
+    </script>
 </body>
 </html>
