@@ -173,38 +173,47 @@ header .nav-list .logo img{
 
   @media  (max-width : 600px) {
     main .hot a .tagline{
-      font-size: 30px;
-      left: 370px;
-      bottom: 230px;
+      font-size: 25px;
+      left: 150px;
+      bottom: 150px;
+      display: block;
     }
 
     main .hot  a img{
-      height: 250px;
-      width: 370px; 
-      padding-top: 50px;
-     
+      height: 270px;
+      width: 300px; 
+      /* padding-top: 30px; */
+      padding-left: 130px;
     }
+
+
+  
     
   }
 
   main .hot{
-    background-color: rgb(118, 173, 118);
+    background-color: #D9D9D9;
     border-radius: 30px;
     margin-top: 10px;
     height: 300px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
   main .hot  img{
     height: 350px;
-    width: 500px; 
+    width: 480px; 
+    margin-bottom: 10px;
   }
 
   main .hot .tagline{
   text-decoration: none;
   position: absolute;
   bottom: 200px;
-  left: 500px;
+  left: 550px;
   font-size: 50px;
-  color: white;
+  color: black;
   }
 
   main hr{
@@ -217,9 +226,9 @@ header .nav-list .logo img{
     height: 80px;
     width: 80px;
     padding: 20px;
-    background-color:rgb(118, 173, 118);
+    background-color:#A5A58B;
     border-radius: 20px;
-    margin: 0px 20px;
+    margin: 20px 20px;
 }
 
 .cat{
@@ -306,8 +315,8 @@ main .main-content table{
 main .main-content button{
   float: right;
   margin-right: 10px;
-  background-color: #6ab97e;
-  border-color: #6ab97e;
+  background-color: #A5A58B;
+  border-color: #A5A58B;
   border-radius: 10px;
   height: 30px;
 }
@@ -315,7 +324,7 @@ main .main-content button{
 main .next{
   height: 30px;
   width: 40px;
-  border: #6ab97e;
+  border: #A5A58B;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;

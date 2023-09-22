@@ -217,14 +217,19 @@ main .container-open{
 
   main .promo{
     text-align: center;
-    color: #6ab97e;
+    color: #6B705C;
     margin-left: auto;
     margin-right: auto;
+    
+  }
+  
+  main .promo h2{
+    font-weight: bolder;
   }
 
   main .promo-slide{
    text-align: center;
-   margin: 50px 0px;
+   margin: 40px 0px;
   }
 
   main .promo-slide img{
@@ -236,7 +241,12 @@ main .container-open{
 
   .highlight{
     text-align: center;
-    color: #6ab97e;
+    color: #6B705C;
+    margin: 10px 0px;
+  }
+
+  .highlight h2{
+    font-weight: bolder;
   }
 
   .h_product{
@@ -279,7 +289,7 @@ main .container-open{
     }
   .h_name{
       height: 330px;
-      width: 200px;
+      width: 250px;
       text-align: center;
       background-color: bisque; 
       padding: 10px;
@@ -290,18 +300,22 @@ main .container-open{
       font-size: smaller;
       text-align: left;
       padding-left: 10px;
-      
+      padding-top: 10px;
+      padding-bottom: 10px;   
+      height: 100px;   
+      background-color: white;
+      border-radius: 10px;
   }
   
   .h_name > .desc > h2{
       margin: 0;
-      font-size: 15px;
+      font-size: 13px;
       padding: 0;
       
   }
   .h_name > .desc > p{
       margin: 0;
-      font-size: 7px;
+      font-size: 10px;
       padding: 0;
   }
   .h_name > .desc > h3{
@@ -316,9 +330,9 @@ main .container-open{
   .h_name  .buy{
     width: 40px;
     height: 40px;
-    background-color: #FFE8D6;
+    background-color: #DEBEA7;
     border-radius: 30px;
-    border-color:#FFE8D6;
+    border-color:#DEBEA7;
   }
   
   main .h_name .keranjang {
@@ -334,6 +348,7 @@ main .container-open{
     position: relative;
     top: 10px;
     left: 70px;
+    cursor: pointer;
   }
 
 .brand > img {
@@ -346,14 +361,17 @@ main .container-open{
 }
 
 .brand>h2{
-  color: rgb(78, 172, 140);
+  color: #6B705C;
   text-align: center;
+  font-weight: bold;
+ 
 }
 
 .brand{
   text-align: center;
   border-radius: 20px;
   margin-top: 30px;
+  margin-bottom:10px;
 }
 
 footer{
