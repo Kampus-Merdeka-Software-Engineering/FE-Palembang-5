@@ -299,9 +299,15 @@ main .main-content{
   background-color: #e0e0d5;
 }
 
-#cart button{
+#cart .delete-button{
   margin-left: 10px;
   float: right;
+}
+
+#cart .co-button{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 main .main-content .card{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
