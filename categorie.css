@@ -243,7 +243,7 @@ header .nav-list .logo img{
 
 /* filter */
 main .content .filter{
-  width: 30%;
+  width: 10%;
   /* background-color: blanchedalmond; */
   height: fit-content;
   flex: 0.25;
@@ -279,7 +279,30 @@ main .main-content{
 
 
 }
+/* keranjang sementara */
 
+#cart{
+  background-color: #A5A58B;
+  width: 25%;
+  border-radius: 20px;
+  margin: 10px 20px;
+}
+
+#cart h2{
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#cart li{
+  padding: 10px 20px;
+  background-color: #e0e0d5;
+}
+
+#cart button{
+  margin-left: 10px;
+  float: right;
+}
 main .main-content .card{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;

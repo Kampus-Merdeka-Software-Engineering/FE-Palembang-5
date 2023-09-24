@@ -254,6 +254,24 @@ main .container-open{
     overflow-x: auto;
 
   }
+  @media screen and (max-width: 600px) {
+    main .main-content tables {
+      display: block; 
+      overflow-x: auto; 
+    }
+  
+    th, td {
+      width: auto; 
+      display: block; 
+      text-align: left; 
+    }
+  
+    th {
+      background-color: #f2f2f2; 
+    }
+  
+  
+  }
 
   
   main .h_product table{
