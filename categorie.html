@@ -105,6 +105,10 @@
                 <ul id="cart-items">
                   <!-- Daftar barang yang ditambahkan akan muncul di sini -->
                 </ul>
+                <div class="co-button">
+                    <button id="coButton">Check Out</button>
+                </div>
+                
               </div>
 
             <div class="main-content" id="product-list">
@@ -242,12 +246,20 @@
 //   Menangani klik pada tombol "Tambahkan ke Keranjang"
   const addToCartButtons = document.querySelectorAll(".add-to-cart");
   const cartList = document.getElementById("cart-items");
+  const co = document.getElementById("coButton");
+
+  co.addEventListener('click', function() {
+    window.location.href = 'cart.html';
+});
+    
+
 
   addToCartButtons.forEach(function (button) {
     button.addEventListener("click", function (event) {
       const item = event.target.parentElement;
       const itemName = item.querySelector(".item-name").textContent;
       const itemPrice = item.querySelector(".item-price").textContent;
+      
       
       // Buat elemen baru untuk item yang ditambahkan ke keranjang
       const cartItem = document.createElement("li");
@@ -261,19 +273,12 @@
         // Hapus elemen li saat tombol hapus ditekan
         cartItem.remove();
       });
+
       cartItem.appendChild(deleteButton);
       // Tambahkan item ke dalam keranjang
       cartList.appendChild(cartItem);
 
-    //   tombol ke checkout section
-      const checkoutButton = document.createElement("button");
-      checkoutButton.textContent="Check Out";
-      checkoutButton.className="co-button";
-      checkoutButton.addEventListener("click", function (){
-        // pindah ke cart page
-        
-      })
-
+     
     });
   });
 
