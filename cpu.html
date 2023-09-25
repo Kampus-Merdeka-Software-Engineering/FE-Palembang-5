@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cpu.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BuyTech</title>
+</head>
+<body>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "nav-list") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav-list";
+          }
+        }
+        </script>
+    <header>
+        <div class="nav-list" id="myTopnav">
+            <div class="logo">
+                <a>
+                    <img href="index.html" class="logo" src="logo folder/logo.png" alt="imglogo">
+                </a>
+            </div>
+             <div class="menu">
+                <a href="index.html" >Home</a>
+                <a href="categorie.html">Categories</a>
+                <a>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit"><i class="i-search"><img src="icon/search.png" alt=""></i></button>
+                        </form>
+                      </div> 
+                </a>  
+               
+                    <a class="profile" href="profile.html">Profile
+                          <img src="icon/profile.png"  alt="">
+                   </a>
+               
+               
+                   <a class="cart" href="cart.html">Cart
+                       <img src="icon/cart.png"alt="cart"></li>
+                   </a>
+               
+            </div>
+    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+    </header>
+
+    <main>
+        <DIV class="container-hot">
+            <div class="hot">
+                <a href="#">
+                    <img src="product/hot.png" alt="zonk">
+                </a>
+                <a href="#">
+                    <h2 class="tagline">September Big Sale! </h2>
+                </a>
+        </div>
+        </DIV>
+        
+
+        <div>
+            <hr>
+        </div>
+        <div class="cat">
+            <h2>Categories</h2>
+                <a href="laptop.html"><img src="product/p4.jpeg" alt="Image 1"></a>
+                <a href="pc.html"><img src="product/p9.jpeg" alt="Image 2"></a>
+                <a href="mouse.html"><img src="product/p17.jpeg" alt="Image 3"></a>
+                <a href="keyboard.html"><img src="product/p6.jpeg" alt="Image 4"></a>
+                <a href="cpu.html"><img src="product/p5.jpeg" alt="Image 5"></a>
+        </div>
+
+        <div>
+            <hr>
+        </div>
+
+        <div class="content">
+            <div class="filter">
+                <h2>Filter</h2>
+                <hr>
+                <form action="/action_page.php">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Filter 1</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Filter 2</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Filter 3</label><br><br>
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>
+            <div id="cart">
+                <h2>Cart</h2>
+                <ul id="cart-items">
+                  <!-- Daftar barang yang ditambahkan akan muncul di sini -->
+                </ul>
+              </div>
+
+            <div class="main-content" id="product-list">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="card">
+                                <img src="product/p2.jpeg" alt="Image 1">
+                                <div class="desc">
+                                    <h4 class="item-name">sandjndafj</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <h4 class="item-price">Rp 100,000</h4>  
+                                </div>
+                                <button class="add-to-cart">
+                                    buy
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card">
+                                <img src="product/p11.jpeg" alt="Image 2">
+                                <div class="desc">
+                                    <h4 class="item-name">sandjndafj</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <h4 class="item-price">Rp 100,000</h4>   
+                                </div>
+                                <button class="add-to-cart">
+                                    buy
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card">
+                                <img src="product/p12.jpeg" alt="Image 3">
+                                <div class="desc">
+                                    <h4 class="item-name">sandjndafj</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <h4 class="item-price">Rp 100,000</h4>  
+                                </div>
+                                <button class="add-to-cart">
+                                    buy
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card">
+                                <img src="product/p33.jpeg" alt="Image 4">
+                                <div class="desc">
+                                    <h4 class="item-name">sandjndafj</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <h4 class="item-price">Rp 100,000</h4>  
+                                </div>
+                                <button class="add-to-cart">
+                                    buy
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="card">
+                                <img src="product/p34.jpeg" alt="Image 5">
+                                <div class="desc">
+                                    <h4 class="item-name">sandjndafj</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <h4 class="item-price">Rp 100,000</h4>  
+                                </div>
+                                <button class="add-to-cart">
+                                    buy
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card">
+                                <img src="product/p35.jpeg" alt="Image 2">
+                                <div class="desc">
+                                    <h4 class="item-name">sandjndafj</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <h4 class="item-price">Rp 100,000</h4>   
+                                </div>
+                                <button class="add-to-cart">
+                                    buy
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card">
+                                <img src="product/p36.jpeg" alt="Image 3">
+                                <div class="desc">
+                                    <h4 class="item-name">sandjndafj</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <h4 class="item-price">Rp 100,000</h4>    
+                                </div>
+                                <button class="add-to-cart">
+                                    buy
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card">
+                                <img src="product/p37.jpeg" alt="Image 4">
+                                <div class="desc">
+                                    <h4 class="item-name">sandjndafj</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <h4 class="item-price">Rp 100,000</h4>  
+                                </div>
+                                <button class="add-to-cart">
+                                    buy
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </table> 
+                <div class="next">
+                    <table  class="next">
+                        <tr  class="next">
+                            <td  class="next">
+                                <button>
+                                    <
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    >
+                                </button>
+                            </td>                            
+                        </tr>
+                    </table>
+            </div>
+            </div>
+        </div>
+
+<script>
+   
+//   Menangani klik pada tombol "Tambahkan ke Keranjang"
+  const addToCartButtons = document.querySelectorAll(".add-to-cart");
+  const cartList = document.getElementById("cart-items");
+
+  addToCartButtons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      const item = event.target.parentElement;
+      const itemName = item.querySelector(".item-name").textContent;
+      const itemPrice = item.querySelector(".item-price").textContent;
+      
+      // Buat elemen baru untuk item yang ditambahkan ke keranjang
+      const cartItem = document.createElement("li");
+      cartItem.textContent = itemName + " - " + itemPrice;
+      
+    //   buat elemn baru tombol hapus barang dari keranjang
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "X";
+      deleteButton.className = "delete-button";
+      deleteButton.addEventListener("click", function () {
+        // Hapus elemen li saat tombol hapus ditekan
+        cartItem.remove();
+      });
+      cartItem.appendChild(deleteButton);
+      // Tambahkan item ke dalam keranjang
+      cartList.appendChild(cartItem);
+
+    //   tombol ke checkout section
+      const checkoutButton = document.createElement("button");
+      checkoutButton.textContent="Check Out";
+      checkoutButton.className="co-button";
+      checkoutButton.addEventListener("click", function (){
+        // pindah ke cart page
+        
+      })
+
+    });
+  });
+
+
+</script>
+
+       
+      
+           
+           
+
+    </main>
+    <footer>
+
+    </footer>
+</body>    
