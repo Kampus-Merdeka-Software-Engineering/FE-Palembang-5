@@ -222,7 +222,7 @@ header .nav-list .logo img{
     border-top: 1px solid #c7c3c3;
 }
 
-.cat > img{
+.cat > a img{
     height: 80px;
     width: 80px;
     padding: 20px;
@@ -302,6 +302,7 @@ main .main-content{
 #cart .delete-button{
   margin-left: 10px;
   float: right;
+  width: 20px;
 }
 
 #cart .co-button{
