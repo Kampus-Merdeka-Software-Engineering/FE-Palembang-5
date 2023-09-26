@@ -110,22 +110,32 @@
                 </div>
                 
               </div>
-
+              <!-- <div id="detailTampilan" class="hidden">
+                <h3>Detail Pembelian:</h3>
+                <p>Silakan isi informasi pembelian Anda di sini.</p>
+            </div> -->
+            
             <div class="main-content" id="product-list">
                 <table>
                     <tr>
                         <td>
-                            <div class="card">
-                                <img src="product/p4.jpeg" alt="Image 1">
-                                <div class="desc">
-                                    <h4 class="item-name">sandjndafj</h4>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    <h4 class="item-price">Rp 100,000</h4>  
+                            
+                                <div class="card" >
+                                    <img src="product/p4.jpeg" alt="Image 1">
+                                    <div class="desc">
+                                        <h4 class="item-name">sandjndafj</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <h4 class="item-price">Rp 100,000</h4>  
+                                    </div>
+                                    <button class="add-to-cart">
+                                        buy
+                                    </button>
                                 </div>
-                                <button class="add-to-cart">
-                                    buy
-                                </button>
-                            </div>
+                                
+                            
+                               
+                           
+                            
                         </td>
                         <td>
                             <div class="card">
@@ -247,11 +257,11 @@
   const addToCartButtons = document.querySelectorAll(".add-to-cart");
   const cartList = document.getElementById("cart-items");
   const co = document.getElementById("coButton");
+  
 
   co.addEventListener('click', function() {
     window.location.href = 'cart.html';
 });
-    
 
 
   addToCartButtons.forEach(function (button) {
@@ -281,6 +291,12 @@
      
     });
   });
+
+// detail product pop-up
+
+
+
+
 
 
 </script>
