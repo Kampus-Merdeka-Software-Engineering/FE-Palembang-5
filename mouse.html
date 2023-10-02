@@ -11,16 +11,6 @@
     <title>BuyTech</title>
 </head>
 <body>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "nav-list") {
-            x.className += " responsive";
-          } else {
-            x.className = "nav-list";
-          }
-        }
-        </script>
     <header>
         <div class="nav-list" id="myTopnav">
             <div class="logo">
@@ -93,6 +83,9 @@
                 <ul id="cart-items">
                   <!-- Daftar barang yang ditambahkan akan muncul di sini -->
                 </ul>
+                <div class="co-button">
+                    <button id="coButton">Check Out</button>
+                </div>
               </div>
 
             <div class="main-content" id="product-list">
@@ -100,53 +93,53 @@
                     <tr>
                         <td>
                             <div class="card">
-                                <img src="product/p14.jpeg" alt="Image 1">
+                                <img class="pPhoto" src="product/p14.jpeg" alt="Image 1">
                                 <div class="desc">
                                     <h4 class="item-name">sandjndafj</h4>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <h4 class="item-price">Rp 100,000</h4>  
                                 </div>
                                 <button class="add-to-cart">
-                                    buy
+                                    Add to Cart
                                 </button>
                             </div>
                         </td>
                         <td>
                             <div class="card">
-                                <img src="product/p13.jpeg" alt="Image 2">
+                                <img class="pPhoto" src="product/p13.jpeg" alt="Image 2">
                                 <div class="desc">
                                     <h4 class="item-name">sandjndafj</h4>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <h4 class="item-price">Rp 100,000</h4>   
                                 </div>
                                 <button class="add-to-cart">
-                                    buy
+                                    Add to Cart
                                 </button>
                             </div>
                         </td>
                         <td>
                             <div class="card">
-                                <img src="product/p17.jpeg" alt="Image 3">
+                                <img class="pPhoto" src="product/p17.jpeg" alt="Image 3">
                                 <div class="desc">
                                     <h4 class="item-name">sandjndafj</h4>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <h4 class="item-price">Rp 100,000</h4>  
                                 </div>
                                 <button class="add-to-cart">
-                                    buy
+                                    Add to Cart
                                 </button>
                             </div>
                         </td>
                         <td>
                             <div class="card">
-                                <img src="product/p15.jpeg" alt="Image 4">
+                                <img class="pPhoto" src="product/p15.jpeg" alt="Image 4">
                                 <div class="desc">
                                     <h4 class="item-name">sandjndafj</h4>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <h4 class="item-price">Rp 100,000</h4>  
                                 </div>
                                 <button class="add-to-cart">
-                                    buy
+                                    Add to Cart
                                 </button>
                             </div>
                         </td>
@@ -154,53 +147,53 @@
                     <tr>
                         <td>
                             <div class="card">
-                                <img src="product/p27.jpeg" alt="Image 5">
+                                <img class="pPhoto" src="product/p27.jpeg" alt="Image 5">
                                 <div class="desc">
                                     <h4 class="item-name">sandjndafj</h4>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <h4 class="item-price">Rp 100,000</h4>  
                                 </div>
                                 <button class="add-to-cart">
-                                    buy
+                                    Add to Cart
                                 </button>
                             </div>
                         </td>
                         <td>
                             <div class="card">
-                                <img src="product/p28.jpeg" alt="Image 2">
+                                <img class="pPhoto" src="product/p28.jpeg" alt="Image 2">
                                 <div class="desc">
                                     <h4 class="item-name">sandjndafj</h4>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <h4 class="item-price">Rp 100,000</h4>   
                                 </div>
                                 <button class="add-to-cart">
-                                    buy
+                                    Add to Cart
                                 </button>
                             </div>
                         </td>
                         <td>
                             <div class="card">
-                                <img src="product/p29.jpeg" alt="Image 3">
+                                <img class="pPhoto" src="product/p29.jpeg" alt="Image 3">
                                 <div class="desc">
                                     <h4 class="item-name">sandjndafj</h4>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <h4 class="item-price">Rp 100,000</h4>    
                                 </div>
                                 <button class="add-to-cart">
-                                    buy
+                                    Add to Cart
                                 </button>
                             </div>
                         </td>
                         <td>
                             <div class="card">
-                                <img src="product/p30.jpeg" alt="Image 4">
+                                <img class="pPhoto" src="product/p30.jpeg" alt="Image 4">
                                 <div class="desc">
                                     <h4 class="item-name">sandjndafj</h4>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <h4 class="item-price">Rp 100,000</h4>  
                                 </div>
                                 <button class="add-to-cart">
-                                    buy
+                                    Add to Cart
                                 </button>
                             </div>
                         </td>
@@ -210,48 +203,7 @@
             </div>
         </div>
 
-<script>
-   
-//   Menangani klik pada tombol "Tambahkan ke Keranjang"
-  const addToCartButtons = document.querySelectorAll(".add-to-cart");
-  const cartList = document.getElementById("cart-items");
-
-  addToCartButtons.forEach(function (button) {
-    button.addEventListener("click", function (event) {
-      const item = event.target.parentElement;
-      const itemName = item.querySelector(".item-name").textContent;
-      const itemPrice = item.querySelector(".item-price").textContent;
-      
-      // Buat elemen baru untuk item yang ditambahkan ke keranjang
-      const cartItem = document.createElement("li");
-      cartItem.textContent = itemName + " - " + itemPrice;
-      
-    //   buat elemn baru tombol hapus barang dari keranjang
-      const deleteButton = document.createElement("button");
-      deleteButton.textContent = "X";
-      deleteButton.className = "delete-button";
-      deleteButton.addEventListener("click", function () {
-        // Hapus elemen li saat tombol hapus ditekan
-        cartItem.remove();
-      });
-      cartItem.appendChild(deleteButton);
-      // Tambahkan item ke dalam keranjang
-      cartList.appendChild(cartItem);
-
-    //   tombol ke checkout section
-      const checkoutButton = document.createElement("button");
-      checkoutButton.textContent="Check Out";
-      checkoutButton.className="co-button";
-      checkoutButton.addEventListener("click", function (){
-        // pindah ke cart page
-        
-      })
-
-    });
-  });
-
-
-</script>
+<script src="js/script.js"></script>
 
        
       
