@@ -175,7 +175,7 @@ header .nav-list .logo img{
     main .hot a .tagline{
       font-size: 25px;
       left: 150px;
-      bottom: 150px;
+      bottom: 180px;
       display: block;
     }
 
@@ -281,9 +281,19 @@ main .main-content{
 }
 /* keranjang sementara */
 
+@media screen and (max-width:600px) {
+  #cart li{
+    font-size: smaller;
+  }
+  #cart{
+    width: 1500px;
+    background-color: yellow;
+  }
+}
+
 #cart{
   background-color: #A5A58B;
-  width: 25%;
+  width: 45%;
   border-radius: 20px;
   margin: 10px 20px;
 }
@@ -327,6 +337,7 @@ main .main-content .card{
   margin-right: auto;
   margin-left: auto;
   cursor: pointer;
+  
 }
 
 main .main-content .card:hover {
@@ -355,20 +366,16 @@ main .main-content table{
 }
 
 main .main-content button{
-  float: right;
-  margin-right: 10px;
   background-color: #A5A58B;
   border-color: #A5A58B;
   border-radius: 10px;
   height: 35px;
   cursor: pointer;
+  margin-left: 25%;
+  width: 100px;
+  margin-top:10px;
 }
 
-.add-to-cart img {
-  width: 20px;
-  height: 20px;
-  
-}
 
 
 
