@@ -12,7 +12,59 @@ function myFunction() {
     }
   }
 
-  // product maintain
+  // HIGHLIGHT PRODUCT maintain
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const hProductList = document.getElementById("hproduct-list");
+    const hProductModal = document.getElementById("hproduct-modal");
+    const hProductDetails = document.getElementById("hproduct-details");
+    const hCloseModal = document.getElementsByClassName("close")[0];
+  
+    const hProduct = [
+      { id: 1, name: "Produk 1", description: "Deskripsi produk 1", price: 100, img: "product/p12.jpeg" },
+      { id: 2, name: "Produk 2", description: "Deskripsi produk 2", price: 150, img: "product/p1.jpeg" },
+      { id: 3, name: "Produk 3", description: "Deskripsi produk 3", price: 200, img: "product/p2.jpeg" },
+    ];
+  
+    hProduct.forEach(h_product => {
+  
+      const productItem = document.createElement("div");
+      productItem.classList.add("hproduct");
+  
+      productItem.innerHTML = `
+        <div class="product-image">
+          <img src="${h_product.img}" alt="${h_product.name}">
+        </div>
+        <div class="product-details">
+          <h3>${h_product.name}</h3>
+          <p>${h_product.description}</p>
+          <p>Harga: ${h_product.price}</p>
+        </div>
+        <div class="product-action">
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      `;
+  
+      // Tambahkan event listener untuk menampilkan modal detail produk saat produk diklik
+      productItem.addEventListener("click", () => {
+        // Isi konten modal dengan informasi produk
+        hProductDetails.innerHTML = `
+          <h2>${h_product.name}</h2>
+          <p>Deskripsi: ${h_product.description}</p>
+          <p>Harga: $${h_product.price}</p>
+        `;
+  
+        // Tampilkan modal
+        hProductModal.style.display = "block";
+      });
+      hProductList.appendChild(productItem);
+  });
+  hCloseModal.addEventListener("click", () => {
+    hProductModal.style.display = "none";
+  });
+});
+
+  // product maintain CATEGORIE
   document.addEventListener("DOMContentLoaded", function () {
     const productList = document.getElementById("product-list");
     const productModal = document.getElementById("product-modal");
