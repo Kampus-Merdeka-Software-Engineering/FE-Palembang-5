@@ -21,9 +21,9 @@ function myFunction() {
     const hCloseModal = document.getElementsByClassName("close")[0];
   
     const hProduct = [
-      { id: 1, name: "Produk 1", description: "Deskripsi produk 1", price: 100, img: "product/p12.jpeg" },
-      { id: 2, name: "Produk 2", description: "Deskripsi produk 2", price: 150, img: "product/p1.jpeg" },
-      { id: 3, name: "Produk 3", description: "Deskripsi produk 3", price: 200, img: "product/p2.jpeg" },
+      { id: 1, name: "Produk 1", click: "Click for more", description: "Deskripsi produk 1", price: 100, img: "product/p12.jpeg" },
+      { id: 2, name: "Produk 2", click: "Click for more", description: "Deskripsi produk 2", price: 150, img: "product/p1.jpeg" },
+      { id: 3, name: "Produk 3", click: "Click for more", description: "Deskripsi produk 3", price: 200, img: "product/p2.jpeg" },
     ];
   
     hProduct.forEach(h_product => {
@@ -37,7 +37,7 @@ function myFunction() {
         </div>
         <div class="product-details">
           <h3>${h_product.name}</h3>
-          <p>${h_product.description}</p>
+          <p>${h_product.click}</p>
           <p>Harga: ${h_product.price}</p>
         </div>
         <div class="product-action">
@@ -79,13 +79,13 @@ function myFunction() {
   
     // Data produk masih manual
     const products = [
-      { id: 1, name: "Produk 1", description: "Deskripsi produk 1", price: 100, img: "product/p12.jpeg" },
-      { id: 2, name: "Produk 2", description: "Deskripsi produk 2", price: 150, img: "product/p1.jpeg" },
-      { id: 3, name: "Produk 3", description: "Deskripsi produk 3", price: 200, img: "product/p2.jpeg" },
-      { id: 4, name: "Produk 4", description: "Deskripsi produk 3", price: 200, img: "product/p3.jpeg" },
-      { id: 5, name: "Produk 5", description: "Deskripsi produk 3", price: 200, img: "product/p4.jpeg" },
-      { id: 6, name: "Produk 6", description: "Deskripsi produk 3", price: 200, img: "product/p5.jpeg" },
-      { id: 7, name: "Produk 7", description: "Deskripsi produk 3", price: 200, img: "product/p6.jpeg" },
+      { id: 1, name: "Produk 1", click: "Click for more", description : "Deskripsi produk 1", price: 100, img: "product/p12.jpeg" },
+      { id: 2, name: "Produk 2", click: "Click for more",description: "Deskripsi produk 2", price: 150, img: "product/p1.jpeg" },
+      { id: 3, name: "Produk 3", click: "Click for more",description: "Deskripsi produk 3", price: 200, img: "product/p2.jpeg" },
+      { id: 4, name: "Produk 4", click: "Click for more",description: "Deskripsi produk 3", price: 200, img: "product/p3.jpeg" },
+      { id: 5, name: "Produk 5", click: "Click for more",description: "Deskripsi produk 3", price: 200, img: "product/p4.jpeg" },
+      { id: 6, name: "Produk 6", click: "Click for more",description: "Deskripsi produk 3", price: 200, img: "product/p5.jpeg" },
+      { id: 7, name: "Produk 7", click: "Click for more",description: "Deskripsi produk 3", price: 200, img: "product/p6.jpeg" },
     ];
   
     // Tampilkan produk dalam halaman
@@ -100,7 +100,7 @@ function myFunction() {
         </div>
         <div class="product-details">
           <h3>${product.name}</h3>
-          <p>${product.description}</p>
+          <p>${product.click}</p>
           <p>Harga: $${product.price}</p>
         </div>
         <div class="product-action">
