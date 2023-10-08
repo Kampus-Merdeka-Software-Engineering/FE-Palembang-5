@@ -291,7 +291,7 @@ input #address{
 .form-group input {
   flex: 1; }
 
-  textarea{
+  textarea, select{
     flex: 1; 
   }
 
