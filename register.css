@@ -37,6 +37,20 @@ body {
     height: 50vh;
   }
 
+  .formLeft{
+    float:left ;
+    margin-right: 5px;
+    width: 48%;
+  margin-bottom: 10px; 
+  }
+
+.formRight{
+    float:right ;
+    margin-left: 5px;
+    width: 48%; 
+  margin-bottom: 10px; 
+}
+
   form{
     padding-top: 20px;
    
@@ -99,4 +113,19 @@ body {
         height: 100px;
         width: 110px
     }
+
+  .formLeft,
+  .formRight {
+    width: 100%; 
+  }
+
+  .form-group{
+    padding: 0px;
+  }
+
+  .container-form{
+    margin-top: 90px;
+  }
+
+
   }
