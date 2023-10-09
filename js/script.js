@@ -40,9 +40,7 @@ function myFunction() {
           <p>${h_product.click}</p>
           <p>Harga: ${h_product.price}</p>
         </div>
-        <div class="product-action">
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
+      
       `;
   
       // Tambahkan event listener untuk menampilkan modal detail produk saat produk diklik
