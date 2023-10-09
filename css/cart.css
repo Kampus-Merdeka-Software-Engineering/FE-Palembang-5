@@ -304,7 +304,7 @@ input #address{
     vertical-align: top;
   }
   .footer .footer-left img {
-  width: 100px;
+  width: 50%;
   }
   
   @media (max-height:600px) {
@@ -335,11 +335,10 @@ input #address{
   padding-bottom: 20px;
   font-size: 16px;
   }
-  .footer .footer-center img {
-  width: 25%;
-  }
   .footer .footer-center .payment {
-  width: 100%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
   }
   .footer .footer-right {
   width: 40%;
@@ -347,8 +346,11 @@ input #address{
   }
   
   .payment img{
-    
+    max-width: 50%; 
+    flex-basis: 50%; 
+    box-sizing: border-box;
     height: 40px;
+    
   }
   .footer .footer-help {
   line-height: 20px;
