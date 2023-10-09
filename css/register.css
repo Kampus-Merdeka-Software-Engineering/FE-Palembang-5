@@ -101,10 +101,6 @@ body {
         width: 110px
     }
 
-  .formLeft,
-  .formRight {
-    width: 100%; 
-  }
 
   .form-group{
     padding: 0px;
