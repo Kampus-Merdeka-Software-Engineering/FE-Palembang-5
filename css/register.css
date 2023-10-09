@@ -37,19 +37,6 @@ body {
     height: 50vh;
   }
 
-  .formLeft{
-    float:left ;
-    margin-right: 5px;
-    width: 48%;
-  margin-bottom: 10px; 
-  }
-
-.formRight{
-    float:right ;
-    margin-left: 5px;
-    width: 48%; 
-  margin-bottom: 10px; 
-}
 
   form{
     padding-top: 20px;
