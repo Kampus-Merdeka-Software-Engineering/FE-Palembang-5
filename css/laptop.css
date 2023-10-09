@@ -424,17 +424,14 @@ font-size: small;
 
 
 /* footer */
-footer {
-  position: static;
-  bottom: 0;
-}
+
 .footer {
   background-color: #cb997e;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font-family: 'poppins' sans-serif;
-  padding: 50px 50px 60px 50px;
+  padding: 20px 60px;
   margin-top: 50px;
   display:flex ;
 }
@@ -446,17 +443,24 @@ footer {
   vertical-align: top;
 }
 .footer .footer-left img {
-width: 100px;
+width: 50%;
 }
 
-@media (max-height:600px) {
-  footer {
-    position: static;
-  }
+
+@media (max-width:600px) {  
+
+
+.footer {
+  position: static; 
+  bottom: 0;
+}
+
   .form-container {
     padding-top: 0px;
   }
 }
+
+
 .footer .footer-left {
   width: 25%;
 }
@@ -470,6 +474,17 @@ font-size: 12px;
 }
 .footer .footer-center {
 width: 35%;
+margin-left: 10%;
+margin-right: auto;
+align-items: center;
+}
+
+.payment img{
+  max-width: 50%; 
+  flex-basis: 50%; 
+  box-sizing: border-box;
+  height: 40px;
+  padding: 5px;
 }
 .footer .footer-center h2 {
 color:black;
@@ -477,21 +492,17 @@ margin: 0;
 padding-bottom: 20px;
 font-size: 16px;
 }
-.footer .footer-center img {
-width: 25%;
-}
 .footer .footer-center .payment {
-width: 100%;
+width: 50%;
+display: flex;
+flex-wrap: wrap;
 }
 .footer .footer-right {
 width: 40%;
 display: flex;
 }
 
-.payment img{
-  
-  height: 40px;
-}
+
 .footer .footer-help {
 line-height: 20px;
 color: black;
@@ -515,7 +526,7 @@ font-size: 12px;
 font-weight: normal;
 font-family: 'poppins', sans-serif;
 margin: 0px;
-padding-left: 20px;
+
 }
 .footer .footer-contact span {
 display: block;
@@ -524,7 +535,7 @@ font-size: 14px;
 font-weight: bold;
 font-family: 'poppins', sans-serif;
 margin-bottom: 20px;
-padding-left: 20px;
+
 }
 .footer .footer-services {
 line-height: 20px;
@@ -533,7 +544,7 @@ font-size: 12px;
 font-weight: normal;
 font-family: 'poppins', sans-serif;
 margin: 0px;
-padding-left: 20px;
+
 }
 .footer .footer-services span {
 display: block;
@@ -542,5 +553,11 @@ font-size: 14px;
 font-weight: bold;
 font-family: 'poppins', sans-serif;
 margin-bottom: 20px;
-padding-left: 20px;
+
 }
+
+/* @media screen and (max-width: 600px) {
+  .footer{
+
+  }
+} */

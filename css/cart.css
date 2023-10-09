@@ -292,7 +292,7 @@ input #address{
     width: 100%;
     text-align: left;
     font-family: 'poppins' sans-serif;
-    padding: 50px 50px 60px 50px;
+    padding: 20px 60px;
     margin-top: 50px;
     display:flex ;
   }
