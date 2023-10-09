@@ -142,43 +142,7 @@ header{
           position: sticky;
       }
   
-      /* main button{
-          position: sticky;
-      }
-  
-      .h_name .buy{
-        position: sticky;
-      } */
   }
-  /* Responsive (600px --) Ends */
-/* Navbar-style Ends  */
-
-/* Shop-cart Start */
-/* .container{
-    position: fixed; */
-    /* top: 0; */
-    /* margin: 200px;  */
-    /* left: 100%; */
-    /* width: 500px;
-    background-color: gray;
-    height: auto;
-    transition: 0.5s;
-    justify-content: center;
-    align-items: center;
-    border-radius: 18px;
-    box-shadow: 0 9px 0 #111113, 0px 2.9px 3.3px rgba(0, 0, 0.068),
-    0px 9.1px 9px rgba(0, 0, 0.084), 0px 23px 21.7px rgba(0, 0, 0.099),
-    0px 72px 72px rgba(0, 0, 0.16);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.18);; */
-/* }
-.container h1{
-    justify-items: center;
-    
-}
-.listCard{
-    background-color: red;
-} */
-/* Shop-cart Ends */
 
 .container{
   align-items: center;
@@ -314,4 +278,127 @@ input #address{
       flex-direction: column; 
       
     }
+  }
+
+  /* footer */
+
+  footer {
+    position: static;
+    bottom: 0;
+  }
+  .footer {
+    background-color: #cb997e;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font-family: 'poppins' sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 50px;
+    display:flex ;
+  }
+   
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .footer .footer-left img {
+  width: 100px;
+  }
+  
+  @media (max-height:600px) {
+    footer {
+      position: static;
+    }
+    .form-container {
+      padding-top: 0px;
+    }
+  }
+  .footer .footer-left {
+    width: 25%;
+  }
+  
+  .footer p {
+  color: black;
+  margin: 0;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  }
+  .footer .footer-center {
+  width: 35%;
+  }
+  .footer .footer-center h2 {
+  color:black;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 16px;
+  }
+  .footer .footer-center img {
+  width: 25%;
+  }
+  .footer .footer-center .payment {
+  width: 100%;
+  }
+  .footer .footer-right {
+  width: 40%;
+  display: flex;
+  }
+  
+  .payment img{
+    
+    height: 40px;
+  }
+  .footer .footer-help {
+  line-height: 20px;
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'poppins', sans-serif;
+  margin: 0px;
+  }
+  .footer .footer-help span {
+  display: block;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'poppins', sans-serif;
+  margin-bottom: 20px;
+  }
+  .footer .footer-contact {
+  line-height: 20px;
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'poppins', sans-serif;
+  margin: 0px;
+  padding-left: 20px;
+  }
+  .footer .footer-contact span {
+  display: block;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'poppins', sans-serif;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  }
+  .footer .footer-services {
+  line-height: 20px;
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'poppins', sans-serif;
+  margin: 0px;
+  padding-left: 20px;
+  }
+  .footer .footer-services span {
+  display: block;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'poppins', sans-serif;
+  margin-bottom: 20px;
+  padding-left: 20px;
   }
