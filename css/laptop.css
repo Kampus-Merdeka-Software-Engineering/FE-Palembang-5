@@ -309,6 +309,7 @@ header .nav-list .logo img{
 .content{
   display: flex;
   height: 100vh;
+  justify-content: space-between;
 }
 
 main .main-content{
@@ -427,13 +428,13 @@ font-size: small;
 
 .footer {
   background-color: #cb997e;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   width: 100%;
   text-align: left;
-  font-family: 'poppins' sans-serif;
   padding: 20px 60px;
   margin-top: 50px;
   display:flex ;
+  justify-content: space-between;
 }
  
 .footer .footer-left,
@@ -450,14 +451,25 @@ width: 50%;
 @media (max-width:600px) {  
 
 
-.footer {
-  position: static; 
-  bottom: 0;
+  .content {
+    padding: 10px; /* Reduce padding for smaller screens */
+}
+
+#product-list{
+  overflow-y: scroll;
+  height:100vh ;
 }
 
   .form-container {
     padding-top: 0px;
   }
+
+  .footer .footer-center h2
+.footer .footer-help span
+.footer .footer-contact span
+.footer .footer-services span{
+  font-size: 10px;
+}
 }
 
 
@@ -500,6 +512,7 @@ flex-wrap: wrap;
 .footer .footer-right {
 width: 40%;
 display: flex;
+margin: 10px;
 }
 
 
