@@ -78,7 +78,7 @@ function myFunction() {
     // Data produk masih manual
     const products = [
       { id: 1, name: "Produk 1", click: "Click for more", description : "Deskripsi produk 1", price: 100, img: "product/p12.jpeg" },
-      { id: 2, name: "Produk 2", click: "Click for more",description: "Deskripsi produk 2", price: 150, img: "product/p1.jpeg" },
+      {id: 2, name: "HP Laptop", click: "Click for more", description: "HP Laptop 14-em0014AU Ryzen 3-7320 Harga: Rp. 7.000.000 Operating system: Windows 11 Home Single Language Processor family: AMD Ryzen™ 3 processor Processor: AMD Ryzen™ 3 7320U (up to 4.1 GHz max boost clock, 4 MB L3 cache, 4 cores, 8 threads)6,71 Chipset AMD integrated SoC  Security management: Mic mute key; Camera privacy shutter; Trusted Platform Module (Firmware TPM) support  Memory 8 GB LPDDR5-6400 MHz RAM (onboard)   Memory layout (slots & size): onboard Internal Storage: 512 GB PCIe® NVMe™ M.2 SSD Cloud service: 25 GB Dropbox storage for 12 months", price: 100, img: "product/p1.jpeg"},
       { id: 3, name: "Produk 3", click: "Click for more",description: "Deskripsi produk 3", price: 200, img: "product/p2.jpeg" },
       { id: 4, name: "Produk 4", click: "Click for more",description: "Deskripsi produk 3", price: 200, img: "product/p3.jpeg" },
       { id: 5, name: "Produk 5", click: "Click for more",description: "Deskripsi produk 3", price: 200, img: "product/p4.jpeg" },
@@ -340,7 +340,7 @@ document.addEventListener("DOMContentLoaded", function () {
  { id: 1, name: "Mouse 1", click: "Click for more", description: "Deskripsi mouse 1", price: 20, img: "product/p14.jpeg" },
  { id: 2, name: "Mouse 2", click: "Click for more", description: "Deskripsi mouse 2", price: 30, img: "product/p13.jpeg" },
  { id: 3, name: "Mouse 3", click: "Click for more", description: "Deskripsi mouse 3", price: 25, img: "product/p15.jpeg" },
- { id: 4, name: "Mouse 4", click: "Click for more", description: "Deskripsi mouse 4", price: 15, img: "product/p17.jpeg" },
+ { id: 4, name: "Logitech Mouse", click: "Click for more", description: "slim ergonomis dirancang dengan 2.4 GHz mouse nirkabel, ideal untuk rumah atau kantor Kompatibel dengan kebanyakan laptop dan komputer desktop via USB receiver (dikemas dalam mouse) 3. Teknologi pelacakan optik, bekerja pada distribusi permukaan 4. 16 saluran kerja nirkabel, frekuensi otomatis melompat 5. Frekuensi: 2402 M HZ-2480 M Hz 6. wi-Fi Range: 10m.", price: 150, img: "product/p17.jpeg" },
   ];
 
   // Tampilkan produk dalam halaman
@@ -459,7 +459,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Data produk masih manual
   const products = [
     
-{ id: 1, name: "Keyboard 1", click: "Click for more", description: "Deskripsi Keyboard 1", price: 20, img: "product/p6.jpeg" },
+{ id: 1, name: "Wireless Keyboard", click: "Click for more", description: "Set Bundle: Ya, Tipe Pengunci Keyboard: Membrane Key, Gaming: Ya, Jenis Garansi: Garansi Resmi Lenovo Indonesia, Model Keyboard & Mouse: Legion KM300 RGB Gaming Combo Wired, Kesesuaian Keyboard: Wired via USB2.0, Masa Garansi: 1 Tahun, Dimensi (P x L x T): Packed 550 x 198 x 52 mm", price: 200, img: "product/p6.jpeg" },
 { id: 2, name: "Keyboard 2", click: "Click for more", description: "Deskripsi Keyboard 2", price: 30, img: "product/p3.jpeg" },
 { id: 3, name: "Keyboard 3", click: "Click for more", description: "Deskripsi Keyboard 3", price: 25, img: "product/p8.jpeg" },
 { id: 4, name: "Keyboard 4", click: "Click for more", description: "Deskripsi Keyboard 4", price: 15, img: "product/p16.jpeg" },
