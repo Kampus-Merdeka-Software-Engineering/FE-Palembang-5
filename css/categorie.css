@@ -361,22 +361,6 @@ main .main-content button{
 
 
 
-  /* popup detail product */
-
-  .popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan */
-    justify-content: center;
-    align-items: center;
-    z-index: 1001; /* Z-index harus lebih tinggi dari konten utama */
-    
-}
-
 #product-details p{
 font-size: small;
 }
