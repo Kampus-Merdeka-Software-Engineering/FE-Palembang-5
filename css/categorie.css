@@ -257,6 +257,7 @@ header .nav-list .logo img{
 
 
 } */
+
 /* keranjang sementara */
 @media screen and (max-width: 600px) {
   #cart{
@@ -450,11 +451,6 @@ width: 50%;
 
 @media (max-width:600px) {  
 
-
-  .content {
-    padding: 10px; /* Reduce padding for smaller screens */
-}
-
 #product-list{
   overflow-y: scroll;
   height:100vh ;
@@ -568,9 +564,3 @@ font-family: 'poppins', sans-serif;
 margin-bottom: 20px;
 
 }
-
-/* @media screen and (max-width: 600px) {
-  .footer{
-
-  }
-} */
