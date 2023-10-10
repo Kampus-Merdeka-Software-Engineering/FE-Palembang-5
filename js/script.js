@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Data produk masih manual
   const products = [
     
-{ id: 1, name: "Laptop 1", click: "Click for more", description: "Deskripsi laptop 1", price: 800, img: "product/acer-laptop.jpeg" },
+    { id: 1, name: "HP Laptop", click: "Click for more", description: "HP Laptop 14-em0014AU Ryzen 3-7320 Harga: Rp. 7.000.000 Operating system: Windows 11 Home Single Language Processor family: AMD Ryzen™ 3 processor Processor: AMD Ryzen™ 3 7320U (up to 4.1 GHz max boost clock, 4 MB L3 cache, 4 cores, 8 threads)6,71 Chipset AMD integrated SoC  Security management: Mic mute key; Camera privacy shutter; Trusted Platform Module (Firmware TPM) support  Memory 8 GB LPDDR5-6400 MHz RAM (onboard)   Memory layout (slots & size): onboard Internal Storage: 512 GB PCIe® NVMe™ M.2 SSD Cloud service: 25 GB Dropbox storage for 12 months", price: 100, img: "product/p1.jpeg" },
 { id: 2, name: "Laptop 2", click: "Click for more", description: "Deskripsi laptop 2", price: 1200, img: "product/asus-laptop.jpeg" },
 { id: 3, name: "Laptop 3", click: "Click for more", description: "Deskripsi laptop 3", price: 1500, img: "product/HP-laptop.jpeg" },
 { id: 4, name: "Laptop 4", click: "Click for more", description: "Deskripsi laptop 4", price: 2000, img: "product/lenovo-laptop.jpeg" },
