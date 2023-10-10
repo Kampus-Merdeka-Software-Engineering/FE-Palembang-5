@@ -312,12 +312,12 @@ header .nav-list .logo img{
   justify-content: space-between;
 }
 
-main .main-content{
+main .mouse{
   width: 70%;
   height: 500px;
   
 }
-main .main-content .product{
+main .mouse .product{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 200px;
@@ -328,27 +328,23 @@ main .main-content .product{
   cursor: pointer;
 }
 
-main .main-content .product:hover {
+main .mouse .product:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-main .main-content img{
+main .mouse img{
 width: 90%;
 height: 150px;
 margin: 10px 10px;
 }
 
-main .main-content .desc{
+main .mouse .desc{
   padding: 2px 16px;
   font-size: small;
 }
 
 
-/* main .main-content table{
-  width: 100%;
-} */
-
-main .main-content button{
+main .mouse button{
  margin-top: 10px;
   margin-left: 20%;
   background-color: #A5A58B;
@@ -359,29 +355,12 @@ main .main-content button{
 }
 
 
-
-  /* popup detail product */
-
-  .popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan */
-    justify-content: center;
-    align-items: center;
-    z-index: 1001; /* Z-index harus lebih tinggi dari konten utama */
-    
-}
-
-.product-details p{
+#Mproduct-details p{
 font-size: small;
 }
 
 /* Modal */
-.modal {
+.Mmodal {
   display: none;
   position: fixed;
   top: 0;
@@ -391,7 +370,7 @@ font-size: small;
   background-color: rgba(0,0,0,0.7);
 }
 
-.modal-content {
+.Mmodal-content {
   background-color: #fff;
   margin: 15% auto;
   padding: 20px;
@@ -408,7 +387,7 @@ font-size: small;
   padding: 10px;
   cursor: pointer;
 }
-.main-content{
+.mouse{
   display: flex;
 }
 .product {
@@ -418,7 +397,7 @@ font-size: small;
   height: 300px;
   cursor: pointer;
 }
-#product-list{
+#Mproduct-list{
   display: flex;
   flex-wrap: wrap;
 }
@@ -455,7 +434,7 @@ width: 50%;
     padding: 10px; /* Reduce padding for smaller screens */
 }
 
-#product-list{
+#Mproduct-list{
   overflow-y: scroll;
   height:100vh ;
 }
@@ -569,8 +548,3 @@ margin-bottom: 20px;
 
 }
 
-/* @media screen and (max-width: 600px) {
-  .footer{
-
-  }
-} */

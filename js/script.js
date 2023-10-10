@@ -152,12 +152,6 @@ function myFunction() {
       
           // Close the product modal when an item is added to the cart
           productModal.style.display = "none";
-      
-          // Mengakses elemen dengan class "order-overflow" pada halaman cart.html
-          const orderOverflow = document.querySelector(".order-overflow");
-      
-          // Menambahkan cartItem ke dalam div dengan class "order-overflow"
-          orderOverflow.appendChild(cartItem);
       });
       
   
@@ -198,3 +192,374 @@ function myFunction() {
   });
 });
 
+
+
+// page laptop
+document.addEventListener("DOMContentLoaded", function () {
+  const productList = document.getElementById("Lproduct-list"); // Mengganti ID sesuai dengan yang baru
+  const productModal = document.getElementById("Lproduct-modal"); // Mengganti ID sesuai dengan yang baru
+  const productDetails = document.getElementById("Lproduct-details"); // Mengganti ID sesuai dengan yang baru
+  const closeModal = document.querySelector(".close"); // Menggunakan querySelector karena class "close" akan digunakan untuk semua elemen close
+  const cartList = document.getElementById("cart-items");
+  const co = document.getElementById("coButton");
+
+  co.addEventListener('click', function () {
+    window.location.href = 'cart.html';
+  });
+
+  // Data produk masih manual
+  const products = [
+    
+{ id: 1, name: "Laptop 1", click: "Click for more", description: "Deskripsi laptop 1", price: 800, img: "product/acer-laptop.jpeg" },
+{ id: 2, name: "Laptop 2", click: "Click for more", description: "Deskripsi laptop 2", price: 1200, img: "product/asus-laptop.jpeg" },
+{ id: 3, name: "Laptop 3", click: "Click for more", description: "Deskripsi laptop 3", price: 1500, img: "product/HP-laptop.jpeg" },
+{ id: 4, name: "Laptop 4", click: "Click for more", description: "Deskripsi laptop 4", price: 2000, img: "product/lenovo-laptop.jpeg" },
+  ];
+
+  // Tampilkan produk dalam halaman
+  products.forEach(product => {
+
+    const productItem = document.createElement("div");
+    productItem.classList.add("product");
+
+    productItem.innerHTML = `
+      <div class="product-image">
+        <img src="${product.img}" alt="${product.name}">
+      </div>
+      <div class="product-details">
+        <h3>${product.name}</h3>
+        <p>${product.click}</p>
+        <p>Harga: $${product.price}</p>
+      </div>
+      <div class="product-action">
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    `;
+
+    // Tambahkan event listener untuk menampilkan modal detail produk saat produk diklik
+    productItem.addEventListener("click", () => {
+      // Isi konten modal dengan informasi produk
+      productDetails.innerHTML = `
+        <h2>${product.name}</h2>
+        <p>Deskripsi: ${product.description}</p>
+        <p>Harga: $${product.price}</p>
+      `;
+
+      // Tampilkan modal
+      productModal.style.display = "block";
+    });
+
+    // Tambahkan produk ke daftar produk
+    productList.appendChild(productItem);
+
+    const addToCartButton = productItem.querySelector(".add-to-cart");
+    addToCartButton.addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevent the productItem click event from firing
+      const itemName = product.name;
+      const itemPrice = product.price;
+
+      // Buat elemen baru untuk item yang ditambahkan ke keranjang
+      const cartItem = document.createElement("li");
+      cartItem.textContent = itemName + " - " + itemPrice;
+
+      // Buat elemen tombol hapus barang dari keranjang
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "X";
+      deleteButton.className = "delete-button";
+      deleteButton.addEventListener("click", function () {
+        // Hapus elemen li saat tombol hapus ditekan
+        cartItem.remove();
+      });
+
+      cartItem.appendChild(deleteButton);
+
+      // Tambahkan item ke dalam keranjang
+      cartList.appendChild(cartItem);
+
+      // Close the product modal when an item is added to the cart
+      productModal.style.display = "none";
+    });
+  });
+
+  // Tambahkan event listener untuk menutup modal
+  closeModal.addEventListener("click", () => {
+    productModal.style.display = "none";
+  });
+
+  // Tutup modal saat mengklik di luar area modal
+  window.addEventListener("click", event => {
+    if (event.target === productModal) {
+      productModal.style.display = "none";
+    }
+  });
+
+  // Tambahkan event listener untuk menampilkan productDetails
+  const productDetailButtons = document.querySelectorAll(".product-details-button");
+  productDetailButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const product = button.parentElement.parentElement;
+      const productName = product.querySelector(".product-details h2").textContent;
+      const productDescription = product.querySelector(".product-details p").textContent;
+      const productPrice = product.querySelector(".product-details p:last-child").textContent;
+
+      // Isi konten productDetails dengan informasi produk
+      productDetails.innerHTML = `
+        <h2>${productName}</h2>
+        <p>${productDescription}</p>
+        <p>${productPrice}</p>
+      `;
+
+      // Tampilkan productDetails
+      productModal.style.display = "block";
+    });
+  });
+});
+
+
+
+
+
+
+// untuk moouse
+
+document.addEventListener("DOMContentLoaded", function () {
+  const productList = document.getElementById("Mproduct-list"); // Mengganti ID sesuai dengan yang baru
+  const productModal = document.getElementById("Mproduct-modal"); // Mengganti ID sesuai dengan yang baru
+  const productDetails = document.getElementById("Mproduct-details"); // Mengganti ID sesuai dengan yang baru
+  const closeModal = document.querySelector(".close"); // Menggunakan querySelector karena class "close" akan digunakan untuk semua elemen close
+  const cartList = document.getElementById("cart-items");
+  const co = document.getElementById("coButton");
+
+  co.addEventListener('click', function () {
+    window.location.href = 'cart.html';
+  });
+
+  // Data produk masih manual
+  const products = [
+    
+ { id: 1, name: "Mouse 1", click: "Click for more", description: "Deskripsi mouse 1", price: 20, img: "product/p14.jpeg" },
+ { id: 2, name: "Mouse 2", click: "Click for more", description: "Deskripsi mouse 2", price: 30, img: "product/p13.jpeg" },
+ { id: 3, name: "Mouse 3", click: "Click for more", description: "Deskripsi mouse 3", price: 25, img: "product/p15.jpeg" },
+ { id: 4, name: "Mouse 4", click: "Click for more", description: "Deskripsi mouse 4", price: 15, img: "product/p17.jpeg" },
+  ];
+
+  // Tampilkan produk dalam halaman
+  products.forEach(product => {
+
+    const productItem = document.createElement("div");
+    productItem.classList.add("product");
+
+    productItem.innerHTML = `
+      <div class="product-image">
+        <img src="${product.img}" alt="${product.name}">
+      </div>
+      <div class="product-details">
+        <h3>${product.name}</h3>
+        <p>${product.click}</p>
+        <p>Harga: $${product.price}</p>
+      </div>
+      <div class="product-action">
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    `;
+
+    // Tambahkan event listener untuk menampilkan modal detail produk saat produk diklik
+    productItem.addEventListener("click", () => {
+      // Isi konten modal dengan informasi produk
+      productDetails.innerHTML = `
+        <h2>${product.name}</h2>
+        <p>Deskripsi: ${product.description}</p>
+        <p>Harga: $${product.price}</p>
+      `;
+
+      // Tampilkan modal
+      productModal.style.display = "block";
+    });
+
+    // Tambahkan produk ke daftar produk
+    productList.appendChild(productItem);
+
+    const addToCartButton = productItem.querySelector(".add-to-cart");
+    addToCartButton.addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevent the productItem click event from firing
+      const itemName = product.name;
+      const itemPrice = product.price;
+
+      // Buat elemen baru untuk item yang ditambahkan ke keranjang
+      const cartItem = document.createElement("li");
+      cartItem.textContent = itemName + " - " + itemPrice;
+
+      // Buat elemen tombol hapus barang dari keranjang
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "X";
+      deleteButton.className = "delete-button";
+      deleteButton.addEventListener("click", function () {
+        // Hapus elemen li saat tombol hapus ditekan
+        cartItem.remove();
+      });
+
+      cartItem.appendChild(deleteButton);
+
+      // Tambahkan item ke dalam keranjang
+      cartList.appendChild(cartItem);
+
+      // Close the product modal when an item is added to the cart
+      productModal.style.display = "none";
+    });
+  });
+
+  // Tambahkan event listener untuk menutup modal
+  closeModal.addEventListener("click", () => {
+    productModal.style.display = "none";
+  });
+
+  // Tutup modal saat mengklik di luar area modal
+  window.addEventListener("click", event => {
+    if (event.target === productModal) {
+      productModal.style.display = "none";
+    }
+  });
+
+  // Tambahkan event listener untuk menampilkan productDetails
+  const productDetailButtons = document.querySelectorAll(".product-details-button");
+  productDetailButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const product = button.parentElement.parentElement;
+      const productName = product.querySelector(".product-details h2").textContent;
+      const productDescription = product.querySelector(".product-details p").textContent;
+      const productPrice = product.querySelector(".product-details p:last-child").textContent;
+
+      // Isi konten productDetails dengan informasi produk
+      productDetails.innerHTML = `
+        <h2>${productName}</h2>
+        <p>${productDescription}</p>
+        <p>${productPrice}</p>
+      `;
+
+      // Tampilkan productDetails
+      productModal.style.display = "block";
+    });
+  });
+});
+
+
+// keyboard
+document.addEventListener("DOMContentLoaded", function () {
+  const productList = document.getElementById("Kproduct-list"); // Mengganti ID sesuai dengan yang baru
+  const productModal = document.getElementById("Kproduct-modal"); // Mengganti ID sesuai dengan yang baru
+  const productDetails = document.getElementById("Kproduct-details"); // Mengganti ID sesuai dengan yang baru
+  const closeModal = document.querySelector(".close"); // Menggunakan querySelector karena class "close" akan digunakan untuk semua elemen close
+  const cartList = document.getElementById("cart-items");
+  const co = document.getElementById("coButton");
+
+  co.addEventListener('click', function () {
+    window.location.href = 'cart.html';
+  });
+
+  // Data produk masih manual
+  const products = [
+    
+{ id: 1, name: "Keyboard 1", click: "Click for more", description: "Deskripsi Keyboard 1", price: 20, img: "product/p6.jpeg" },
+{ id: 2, name: "Keyboard 2", click: "Click for more", description: "Deskripsi Keyboard 2", price: 30, img: "product/p3.jpeg" },
+{ id: 3, name: "Keyboard 3", click: "Click for more", description: "Deskripsi Keyboard 3", price: 25, img: "product/p8.jpeg" },
+{ id: 4, name: "Keyboard 4", click: "Click for more", description: "Deskripsi Keyboard 4", price: 15, img: "product/p16.jpeg" },
+  ];
+
+  // Tampilkan produk dalam halaman
+  products.forEach(product => {
+
+    const productItem = document.createElement("div");
+    productItem.classList.add("product");
+
+    productItem.innerHTML = `
+      <div class="product-image">
+        <img src="${product.img}" alt="${product.name}">
+      </div>
+      <div class="product-details">
+        <h3>${product.name}</h3>
+        <p>${product.click}</p>
+        <p>Harga: $${product.price}</p>
+      </div>
+      <div class="product-action">
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    `;
+
+    // Tambahkan event listener untuk menampilkan modal detail produk saat produk diklik
+    productItem.addEventListener("click", () => {
+      // Isi konten modal dengan informasi produk
+      productDetails.innerHTML = `
+        <h2>${product.name}</h2>
+        <p>Deskripsi: ${product.description}</p>
+        <p>Harga: $${product.price}</p>
+      `;
+
+      // Tampilkan modal
+      productModal.style.display = "block";
+    });
+
+    // Tambahkan produk ke daftar produk
+    productList.appendChild(productItem);
+
+    const addToCartButton = productItem.querySelector(".add-to-cart");
+    addToCartButton.addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevent the productItem click event from firing
+      const itemName = product.name;
+      const itemPrice = product.price;
+
+      // Buat elemen baru untuk item yang ditambahkan ke keranjang
+      const cartItem = document.createElement("li");
+      cartItem.textContent = itemName + " - " + itemPrice;
+
+      // Buat elemen tombol hapus barang dari keranjang
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "X";
+      deleteButton.className = "delete-button";
+      deleteButton.addEventListener("click", function () {
+        // Hapus elemen li saat tombol hapus ditekan
+        cartItem.remove();
+      });
+
+      cartItem.appendChild(deleteButton);
+
+      // Tambahkan item ke dalam keranjang
+      cartList.appendChild(cartItem);
+
+      // Close the product modal when an item is added to the cart
+      productModal.style.display = "none";
+    });
+  });
+
+  // Tambahkan event listener untuk menutup modal
+  closeModal.addEventListener("click", () => {
+    productModal.style.display = "none";
+  });
+
+  // Tutup modal saat mengklik di luar area modal
+  window.addEventListener("click", event => {
+    if (event.target === productModal) {
+      productModal.style.display = "none";
+    }
+  });
+
+  // Tambahkan event listener untuk menampilkan productDetails
+  const productDetailButtons = document.querySelectorAll(".product-details-button");
+  productDetailButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const product = button.parentElement.parentElement;
+      const productName = product.querySelector(".product-details h2").textContent;
+      const productDescription = product.querySelector(".product-details p").textContent;
+      const productPrice = product.querySelector(".product-details p:last-child").textContent;
+
+      // Isi konten productDetails dengan informasi produk
+      productDetails.innerHTML = `
+        <h2>${productName}</h2>
+        <p>${productDescription}</p>
+        <p>${productPrice}</p>
+      `;
+
+      // Tampilkan productDetails
+      productModal.style.display = "block";
+    });
+  });
+});
